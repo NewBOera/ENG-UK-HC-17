@@ -1,0 +1,35 @@
+html,
+body {
+   scroll-behavior: smooth;
+}
+
+.overflow::-webkit-scrollbar {
+   width: 8px;
+}
+
+.overflow::-webkit-scrollbar-track {
+   background: #f1f1f1;
+   border-radius: 10px;
+}
+
+.overflow::-webkit-scrollbar-thumb {
+   background: #888;
+   border-radius: 10px;
+}
+
+.overflow::-webkit-scrollbar-thumb:hover {
+   background: #555;
+}
+
+.bg-form-2 {
+   background-repeat: no-repeat;
+   background-position: bottom;
+   background-size: cover;
+   background-image: url("/images/Desktop/CONTACTO/BGcONTACT.webp");
+}
+.bg-form {
+   background-repeat: no-repeat;
+   background-position: bottom;
+   background-size: cover;
+   background-image: url("/images/Mobile/CONTACTO/BGcONTACT.webp");
+}
