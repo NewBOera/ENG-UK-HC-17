@@ -29,6 +29,7 @@
     <script defer src="scripts/form_logic.js"></script>
     <script defer src="scripts/flag.js"></script>
     <script defer src="scripts/faq.js"></script>
+    <script defer src="scripts/button-to-form.js"></script>
 
     <link rel="stylesheet" href="styles/notify.css" />
     <link rel="stylesheet" href="styles/globals.css" />
@@ -314,8 +315,8 @@
               </h2>
               <label for="people">Number of People</label>
               <select name="people" class="rounded-xl p-3" id="">
-                <option value="one">Choose number</option>
-                <option value="two">1</option>
+                <option value="">Choose number</option>
+                <option value="">1</option>
                 <option value=" ">2</option>
                 <option value=" ">3</option>
                 <option value=" ">4</option>
@@ -327,14 +328,14 @@
                 <option value=" ">0</option>
               </select>
               <label for="hotel">Hotel</label>
-              <select name="hotel" class="rounded-xl p-3" id="">
-                <option value=" ">Choose hotel</option>
-                <option value=" ">Clermont Club</option>
-                <option value=" ">Hippodrome Casino</option>
-                <option value=" ">Aspers Casino</option>
-                <option value=" ">Genting Casino</option>
-                <option value=" ">ALEA Nottingham</option>
-                <option value=" ">Rainbow Casino</option>
+              <select name="hotel" class="rounded-xl p-3" id="hotels">
+                <option value="">Choose hotel</option>
+                <option value="clermont">Clermont Club</option>
+                <option value="hippodrome">Hippodrome Casino</option>
+                <option value="aspers">Aspers Casino</option>
+                <option value="genting">Genting Casino</option>
+                <option value="alea">ALEA Nottingham</option>
+                <option value="rainbow">Rainbow Casino</option>
               </select>
               <label for="date"> Date </label>
               <input type="date" name="date" id="" class="text-gray-400" />
@@ -678,6 +679,7 @@
                 for discerning guests seeking a high-end casino experience.
               </p>
               <a
+                id="clermont"
                 href="#estimate-form"
                 class="flex bg-[#6F4A72] justify-center items-center gap-3 p-3 rounded-full w-[70%] self-center mt-2"
                 type="submit"
@@ -725,6 +727,7 @@
                 dining experiences.
               </p>
               <a
+                id="hippodrome"
                 href="#estimate-form"
                 class="flex bg-[#6F4A72] justify-center items-center gap-3 p-3 rounded-full w-[70%] self-center mt-2"
                 type="submit"
@@ -772,6 +775,7 @@
                 games.
               </p>
               <a
+                id="aspers"
                 href="#estimate-form"
                 class="flex bg-[#6F4A72] justify-center items-center gap-3 p-3 rounded-full w-[70%] self-center mt-2"
                 type="submit"
@@ -819,6 +823,7 @@
                 classic casino games with modern technology.
               </p>
               <a
+                id="genting"
                 href="#estimate-form"
                 class="flex bg-[#6F4A72] justify-center items-center gap-3 p-3 rounded-full w-[70%] self-center mt-2"
                 type="submit"
@@ -866,6 +871,7 @@
                 entertainment. The casino features a wide range of games.
               </p>
               <a
+                id="alea"
                 href="#estimate-form"
                 class="flex bg-[#6F4A72] justify-center items-center gap-3 p-3 rounded-full w-[70%] self-center mt-2"
                 type="submit"
@@ -913,6 +919,7 @@
                 options.
               </p>
               <a
+                id="rainbow"
                 href="#estimate-form"
                 class="flex bg-[#6F4A72] justify-center items-center gap-3 p-3 rounded-full w-[70%] self-center mt-2"
                 type="submit"
